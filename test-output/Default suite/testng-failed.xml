@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test thread-count="5" name="Default test(failed)">
+    <classes>
+      <class name="com.tetonshop.main.SeleniumTestManager">
+        <methods>
+          <include name="AboutUs_Contact"/>
+          <include name="Products"/>
+          <include name="FAQ"/>
+          <include name="BeforeTest"/>
+          <include name="AfterTest"/>
+          <include name="setUpTest"/>
+          <include name="Contact"/>
+        </methods>
+      </class> <!-- com.tetonshop.main.SeleniumTestManager -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
