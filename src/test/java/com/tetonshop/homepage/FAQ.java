@@ -20,16 +20,11 @@ public class FAQ {
 			Thread.sleep(2000);
 			driver.findElement(By.xpath("//a[contains(@href, '#faq9')]")).click();
 			Thread.sleep(2000);
-			
-			
-			
 
 		}catch(Exception e) {
 			e.printStackTrace();
 			driver.quit();
 
 		}
-
 	}
-
 }

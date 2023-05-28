@@ -17,9 +17,7 @@ public class Contact {
 			driver.quit();
 
 		}
-
 	}
-
 }
 
 

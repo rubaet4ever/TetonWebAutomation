@@ -24,13 +24,10 @@ public class Register {
 			driver.findElement(By.xpath("//div[6]/button")).click();
 			Thread.sleep(2000);
 			
-		
 		}catch(Exception e) {
 			e.printStackTrace();
 			driver.quit();
 
 		}
-
 	}
-
 }

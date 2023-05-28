@@ -3,7 +3,6 @@ package com.tetonshop.main;
 import java.io.File;
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;
-
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.OutputType;
@@ -17,30 +16,23 @@ import org.testng.annotations.AfterSuite;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
-
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
 import com.aventstack.extentreports.observer.entity.MediaEntity.MediaEntityBuilder;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
-
 import com.tetonshop.homepage.Products;
 import com.tetonshop.homepage.ProductsAdd_DeleteCart;
 import com.tetonshop.homepage.Register;
 import com.tetonshop.homepage.ResetPassword;
-import com.tetonshop.report.ExtentReportWithTestNG;
 import com.tetonshop.report.ExtentReportsWithTestNG;
-
 import graphql.org.antlr.v4.runtime.misc.Utils;
-
 import com.tetonshop.homepage.AboutUs;
 import com.tetonshop.homepage.Contact;
 import com.tetonshop.homepage.FAQ;
 import com.tetonshop.homepage.Login;
 
-
 public class SeleniumTestManager {
-
 
 	ExtentReports extent = new ExtentReports();
 	ExtentSparkReporter spark = new ExtentSparkReporter("Extentreport.html");
@@ -49,8 +41,6 @@ public class SeleniumTestManager {
 	//	static ExtentReports report;
 	//	static ExtentTest test;
 	WebDriver driver = null;
-
-
 
 	@BeforeTest 
 	public void setUpTest(){
@@ -79,7 +69,7 @@ public class SeleniumTestManager {
 			Products.createProductsTest(driver);
 			FAQ.createFAQTest(driver);
 			Contact.createContactTest(driver);
-			ExtentReportsWithTestNG.createExtentReportsWithTestNG(driver); 
+			//ExtentReportsWithTestNG.createExtentReportsWithTestNG(driver); 
 			
 
 			ExtentTest Test = extent.createTest("Launch Browser and Website").assignAuthor("Mohammad").assignCategory("UI Test").assignDevice("DeskTop");
@@ -145,10 +135,6 @@ public class SeleniumTestManager {
 	//		String title = driver.getTitle();
 	//		System.err.println(title);
 	//		test.log(Status.PASS, "title");
-
-
-
-
 
 	//	@BeforeTest
 	//	public void BeforeTest() {

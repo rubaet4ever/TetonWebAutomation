@@ -17,14 +17,11 @@ public class Login {
 			Thread.sleep(2000);
 			driver.findElement(By.xpath("//div[4]/button")).click();
 			Thread.sleep(2000);
-			
 		
 		}catch(Exception e) {
 			e.printStackTrace();
 			driver.quit();
 
 		}
-
 	}
-
 }

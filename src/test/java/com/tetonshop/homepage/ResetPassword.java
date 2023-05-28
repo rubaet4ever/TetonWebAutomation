@@ -17,14 +17,11 @@ public class ResetPassword {
 			Thread.sleep(2000);
 			driver.findElement(By.xpath("//div[2]/button")).click();
 			Thread.sleep(2000);
-			
 		
 		}catch(Exception e) {
 			e.printStackTrace();
 			driver.quit();
 
 		}
-
 	}
-
 }
