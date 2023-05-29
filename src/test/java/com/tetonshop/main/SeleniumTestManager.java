@@ -89,61 +89,65 @@ public class SeleniumTestManager {
 		Test.info("Displaying Page");
 		Test.pass("user into application menu");
 	}
+	
 	@Test
 	public void Products() {
 		ExtentTest Test = extent.createTest("Verify Products Menu Page").assignAuthor("Qaiyum").assignCategory("Sanity Test").assignDevice("DeskTop");
 		Test.info("Displaying Page");
 		Test.pass("user into application menu");
 	}
+	
 	@Test
 	public void FAQ() {
 		ExtentTest Test = extent.createTest("Verify FAQ Menu Page").assignAuthor("Mitul").assignCategory("Re Test").assignDevice("DeskTop");
 		Test.info("Displaying Page");
 		Test.pass("user into application menu");
 	}
+	
 	@Test
-	public void Contact () {
+	public void Contact() {
 		ExtentTest Test = extent.createTest("Verify FAQ Menu Page").assignAuthor("Mitul").assignCategory("Smoke Test").assignDevice("DeskTop");
 		Test.info("Displaying Page");
 		Test.pass("user into application menu");
 	}
+	
 	@Test
-	public void Login () {
+	public void Login() {
 		ExtentTest Test = extent.createTest("Verify FAQ Menu Page").assignAuthor("Mitul").assignCategory("User Acceptance Testing").assignDevice("DeskTop");
 		Test.info("Displaying Page");
 		Test.pass("user into application menu");
 	}
+	
 	@Test
-	public void Register () {
+	public void Register() {
 		ExtentTest Test = extent.createTest("Verify FAQ Menu Page").assignAuthor("Mitul").assignCategory("Security Testing").assignDevice("DeskTop");
 		Test.info("Displaying Page");
 		Test.pass("user into application menu");
 	}
+	
 	@Test
-	public void ResetPassword () {
-		ExtentTest Test = extent.createTest("Verify FAQ Menu Page").assignAuthor("Mitul").assignCategory("User Acceptance Testing").assignDevice("DeskTop");
+	public void ResetPassword() {
+		ExtentTest Test = extent.createTest("ResetPassword").assignAuthor("Mitul").assignCategory("User Acceptance Testing").assignDevice("DeskTop");
 		Test.info("Displaying Page");
 		Test.pass("user into application menu");
 	}
+	
 	@Test
 	public void ProductsAdd_DeleteCart () {
-		ExtentTest Test = extent.createTest("Verify FAQ Menu Page").assignAuthor("Mitul").assignCategory("Functionality Testing").assignDevice("DeskTop");
+		ExtentTest Test = extent.createTest("Verify user able to ProductsAdd_DeleteCart Successfully").assignAuthor("Mitul").assignCategory("Functionality Testing").assignDevice("Desktop_chrome");
 		Test.info("Displaying Page");
 		Test.pass("user into application menu");
 	}
+	
 	//		String title = driver.getTitle();
 	//		System.err.println(title);
 	//		test.log(Status.PASS, "title");
 
 	//	@BeforeTest
 	//	public void BeforeTest() {
-	//		
-	//		ExtentReports extent = new ExtentReports();
-	//		ExtentSparkReporter spark = new ExtentSparkReporter("Extentreport.html");
-	//		extent.attachReporter(spark);
-	//		
-	//
-	//
+	//	ExtentReports extent = new ExtentReports();
+	//	ExtentSparkReporter spark = new ExtentSparkReporter("Extentreport.html");
+	//	extent.attachReporter(spark);
 	//	}
 
 	//@Test
