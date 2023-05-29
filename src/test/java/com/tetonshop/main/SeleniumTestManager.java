@@ -71,7 +71,6 @@ public class SeleniumTestManager {
 			Contact.createContactTest(driver);
 			//ExtentReportsWithTestNG.createExtentReportsWithTestNG(driver); 
 			
-
 			ExtentTest Test = extent.createTest("Launch Browser and Website").assignAuthor("Mohammad").assignCategory("UI Test").assignDevice("DeskTop");
 			Test.log(Status.PASS,"user launched website");
 			Test.pass("user launched website verified");
@@ -108,25 +107,25 @@ public class SeleniumTestManager {
 		Test.info("Displaying Page");
 		Test.pass("user into application menu");
 	}
-	
+	@Test
 	public void Login () {
 		ExtentTest Test = extent.createTest("Verify FAQ Menu Page").assignAuthor("Mitul").assignCategory("User Acceptance Testing").assignDevice("DeskTop");
 		Test.info("Displaying Page");
 		Test.pass("user into application menu");
 	}
-	
+	@Test
 	public void Register () {
 		ExtentTest Test = extent.createTest("Verify FAQ Menu Page").assignAuthor("Mitul").assignCategory("Security Testing").assignDevice("DeskTop");
 		Test.info("Displaying Page");
 		Test.pass("user into application menu");
 	}
-	
+	@Test
 	public void ResetPassword () {
 		ExtentTest Test = extent.createTest("Verify FAQ Menu Page").assignAuthor("Mitul").assignCategory("User Acceptance Testing").assignDevice("DeskTop");
 		Test.info("Displaying Page");
 		Test.pass("user into application menu");
 	}
-	
+	@Test
 	public void ProductsAdd_DeleteCart () {
 		ExtentTest Test = extent.createTest("Verify FAQ Menu Page").assignAuthor("Mitul").assignCategory("Functionality Testing").assignDevice("DeskTop");
 		Test.info("Displaying Page");
