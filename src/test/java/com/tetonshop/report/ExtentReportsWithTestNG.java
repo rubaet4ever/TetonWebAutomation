@@ -7,6 +7,7 @@ import com.aventstack.extentreports.Status;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 
 import org.testng.annotations.BeforeTest;
+import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterTest;
 
 public class ExtentReportsWithTestNG {
@@ -15,43 +16,55 @@ public class ExtentReportsWithTestNG {
 	public ExtentSparkReporter spark;
 	public ExtentTest test;
 	
+	public static void createExtentReportsWithTestNG(WebDriver driver) {
+		// TODO Auto-generated method stub
+		
+		
+	}
+	
+	@Test
+	public void setUpTest(){
+	ExtentTest Test = extent.createTest("Launch Browser and Website").assignAuthor("Mohammad").assignCategory("UI Test").assignDevice("Desktop_chrome");
+	Test.log(Status.PASS,"Browser lunched");
+	Test.pass("Browser launched successfully");
+	test.info("Displaying Page");
+	}
+	
 	@Test
 	public void AboutUs() {
-		test = extent.createTest("Verify Launch Browser")
-				.assignAuthor("Bharath")
-				.assignCategory("smoke")
+		test = extent.createTest("Verify About Us Menu Page")
+				.assignAuthor("Rubaet")
+				.assignCategory("Smoke Test")
 				.assignDevice("Desktop_chrome");
-		test.log(Status.PASS, "Browser lunched");
-		test.pass("Browser launched successfully");
+		test.pass("About Us page is able to clickable");
 		test.info("Displaying Page");
 	}
 	
 	@Test
 	public void Products() {
-		test = extent.createTest("Verify user able to login with valid cred.")
-				.assignAuthor("Kumar")
-				.assignCategory("sanity")
+		test = extent.createTest("Verify Products Menu Page")
+				.assignAuthor("Qaiyum")
+				.assignCategory("Sanity Test")
 				.assignDevice("Desktop_chrome");
-		test.info("Enter valid credentials");
-		test.pass("user logged in successfully");
-		test.warning("Reset password after first login");
+		test.pass("Product page is able to clickable");
+		test.info("Displaying Page");
 	}
 	
 	@Test
 	public void FAQ() {
-		test = extent.createTest("Verify user able to reach home screen")
-				.assignAuthor("Kumar")
-				.assignCategory("regression")
+		test = extent.createTest("Verify FAQ Menu Page")
+				.assignAuthor("Mitul")
+				.assignCategory("RE Test")
 				.assignDevice("Desktop_chrome");
-		test.skip("Unable to load home screen");
+		test.pass("FAQ page is able to clickable");
 		test.info("Displaying Page");
 	}
 	
 	@Test
 	public void Contact() {
-		test = extent.createTest("Verify user navigate all screens")
-				.assignAuthor("BBK")
-				.assignCategory("regression")
+		test = extent.createTest("Verify Contact Menu Page")
+				.assignAuthor("John")
+				.assignCategory("Smoke Test")
 				.assignDevice("Desktop_chrome");
 		test.fail("User unable to navigate all screens");
 		test.info("Displaying Page");
@@ -59,38 +72,39 @@ public class ExtentReportsWithTestNG {
 	
 	@Test
 	public void Login() {
-		test = extent.createTest("Verify user able to click on logout button")
-				.assignAuthor("BBK")
-				.assignCategory("regression")
+		test = extent.createTest("Verify user unable to login with invalid credentials")
+				.assignAuthor("Smith")
+				.assignCategory("User Acceptance Testing")
 				.assignDevice("Desktop_chrome");
-		test.pass("User able to click on logout button and it's loading");
+		test.pass("User not able to login successfully");
 		test.info("Displaying Page");
 	}
 	
 	@Test
 	public void Register() {
-		test = extent.createTest("Verify user able to logged out successfully")
-				.assignAuthor("BBK1")
-				.assignCategory("regression")
+		test = extent.createTest("Verify user unable to register with invalid credentials")
+				.assignAuthor("Robert")
+				.assignCategory("Security Testing")
 				.assignDevice("Desktop_chrome");
-		test.fail("User unable to logout application is not responding");
+		test.pass("User unable to register to complete the application registration form");
 		test.info("Displaying Page");;
 	}
 	
 	@Test
 	public void ResetPassword() {
-		test = extent.createTest("Verify user able to logged out successfully")
-				.assignAuthor("BBK1")
-				.assignCategory("regression")
+		test = extent.createTest("Verify user unable to sent with invalid credentials")
+				.assignAuthor("Carlo")
+				.assignCategory("User Acceptance Testing")
 				.assignDevice("Desktop_chrome");
-		test.fail("User unable to logout application is not responding");
+		test.pass("User unable to reset passoword is not responding");
+		test.warning("Reset password after first login");
 		test.info("Displaying Page");;
 	}
 	
 	@Test
 	public void ProductsAdd_DeleteCart() {
 		test = extent.createTest("Verify user able to ProductsAdd_DeleteCart Successfully")
-				.assignAuthor("Mitul")
+				.assignAuthor("Rian")
 				.assignCategory("Functionality Testing")
 				.assignDevice("Desktop_chrome");
 		test.fail("User unable to checkout selected items and after it is not responding");

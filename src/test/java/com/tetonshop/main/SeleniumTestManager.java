@@ -60,8 +60,7 @@ public class SeleniumTestManager {
 			//webDriverManager.setup();
 
 			//WebDriver driver = getFirefoxDriver(SERVER_URL); 
-
-			ProductsAdd_DeleteCart.createProductsAdd_DeleteCart(driver);
+            
 			Register.createRegisterTest(driver);
 			ResetPassword.createResetPasswordTest(driver);
 			Login.createLoginTest(driver);
@@ -69,11 +68,12 @@ public class SeleniumTestManager {
 			Products.createProductsTest(driver);
 			FAQ.createFAQTest(driver);
 			Contact.createContactTest(driver);
-			//ExtentReportsWithTestNG.createExtentReportsWithTestNG(driver); 
+			ProductsAdd_DeleteCart.createProductsAdd_DeleteCart(driver);
+			ExtentReportsWithTestNG.createExtentReportsWithTestNG(driver);
 			
-			ExtentTest Test = extent.createTest("Launch Browser and Website").assignAuthor("Mohammad").assignCategory("UI Test").assignDevice("DeskTop");
-			Test.log(Status.PASS,"user launched website");
-			Test.pass("user launched website verified");
+//			ExtentTest Test = extent.createTest("Launch Browser and Website").assignAuthor("Mohammad").assignCategory("UI Test").assignDevice("DeskTop");
+//			Test.log(Status.PASS,"user launched website");
+//			Test.pass("user launched website verified");
 		}
 		catch(Exception e) {
 			e.printStackTrace();
@@ -83,61 +83,61 @@ public class SeleniumTestManager {
 
 	}
 
-	@Test
-	public void AboutUs() {
-		ExtentTest Test = extent.createTest("Verify About Us Menu Page").assignAuthor("Rubaet").assignCategory("Smoke Test").assignDevice("DeskTop");
-		Test.info("Displaying Page");
-		Test.pass("user into application menu");
-	}
-	
-	@Test
-	public void Products() {
-		ExtentTest Test = extent.createTest("Verify Products Menu Page").assignAuthor("Qaiyum").assignCategory("Sanity Test").assignDevice("DeskTop");
-		Test.info("Displaying Page");
-		Test.pass("user into application menu");
-	}
-	
-	@Test
-	public void FAQ() {
-		ExtentTest Test = extent.createTest("Verify FAQ Menu Page").assignAuthor("Mitul").assignCategory("Re Test").assignDevice("DeskTop");
-		Test.info("Displaying Page");
-		Test.pass("user into application menu");
-	}
-	
-	@Test
-	public void Contact() {
-		ExtentTest Test = extent.createTest("Verify FAQ Menu Page").assignAuthor("Mitul").assignCategory("Smoke Test").assignDevice("DeskTop");
-		Test.info("Displaying Page");
-		Test.pass("user into application menu");
-	}
-	
-	@Test
-	public void Login() {
-		ExtentTest Test = extent.createTest("Verify FAQ Menu Page").assignAuthor("Mitul").assignCategory("User Acceptance Testing").assignDevice("DeskTop");
-		Test.info("Displaying Page");
-		Test.pass("user into application menu");
-	}
-	
-	@Test
-	public void Register() {
-		ExtentTest Test = extent.createTest("Verify FAQ Menu Page").assignAuthor("Mitul").assignCategory("Security Testing").assignDevice("DeskTop");
-		Test.info("Displaying Page");
-		Test.pass("user into application menu");
-	}
-	
-	@Test
-	public void ResetPassword() {
-		ExtentTest Test = extent.createTest("ResetPassword").assignAuthor("Mitul").assignCategory("User Acceptance Testing").assignDevice("DeskTop");
-		Test.info("Displaying Page");
-		Test.pass("user into application menu");
-	}
-	
-	@Test
-	public void ProductsAdd_DeleteCart () {
-		ExtentTest Test = extent.createTest("Verify user able to ProductsAdd_DeleteCart Successfully").assignAuthor("Mitul").assignCategory("Functionality Testing").assignDevice("Desktop_chrome");
-		Test.info("Displaying Page");
-		Test.pass("user into application menu");
-	}
+//	@Test
+//	public void AboutUs() {
+//		ExtentTest Test = extent.createTest("Verify About Us Menu Page").assignAuthor("Rubaet").assignCategory("Smoke Test").assignDevice("DeskTop");
+//		Test.info("Displaying Page");
+//		Test.pass("user into application menu");
+//	}
+//	
+//	@Test
+//	public void Products() {
+//		ExtentTest Test = extent.createTest("Verify Products Menu Page").assignAuthor("Qaiyum").assignCategory("Sanity Test").assignDevice("DeskTop");
+//		Test.info("Displaying Page");
+//		Test.pass("user into application menu");
+//	}
+//	
+//	@Test
+//	public void FAQ() {
+//		ExtentTest Test = extent.createTest("Verify FAQ Menu Page").assignAuthor("Mitul").assignCategory("Re Test").assignDevice("DeskTop");
+//		Test.info("Displaying Page");
+//		Test.pass("user into application menu");
+//	}
+//	
+//	@Test
+//	public void Contact() {
+//		ExtentTest Test = extent.createTest("Verify FAQ Menu Page").assignAuthor("John").assignCategory("Smoke Test").assignDevice("DeskTop");
+//		Test.info("Displaying Page");
+//		Test.pass("user into application menu");
+//	}
+//	
+//	@Test
+//	public void Login() {
+//		ExtentTest Test = extent.createTest("Verify FAQ Menu Page").assignAuthor("Smith").assignCategory("User Acceptance Testing").assignDevice("DeskTop");
+//		Test.info("Displaying Page");
+//		Test.pass("user into application menu");
+//	}
+//	
+//	@Test
+//	public void Register() {
+//		ExtentTest Test = extent.createTest("Verify FAQ Menu Page").assignAuthor("Robert").assignCategory("Security Testing").assignDevice("DeskTop");
+//		Test.info("Displaying Page");
+//		Test.fail("user into application menu");
+//	}
+//	
+//	@Test
+//	public void ResetPassword() {
+//		ExtentTest Test = extent.createTest("ResetPassword").assignAuthor("Carlo").assignCategory("User Acceptance Testing").assignDevice("DeskTop");
+//		Test.info("Displaying Page");
+//		Test.pass("user into application menu");
+//	}
+//	
+//	@Test
+//	public void ProductsAdd_DeleteCart () {
+//		ExtentTest Test = extent.createTest("Verify user able to ProductsAdd_DeleteCart Successfully").assignAuthor("Rian").assignCategory("Functionality Testing").assignDevice("Desktop_chrome");
+//		Test.info("Displaying Page");
+//		Test.pass("user into application menu");
+//	}
 	
 	//		String title = driver.getTitle();
 	//		System.err.println(title);
@@ -216,16 +216,16 @@ public class SeleniumTestManager {
 		return driver;
 	}
 
-	@BeforeTest
-	public void BeforeTest() {
-		extent.attachReporter(spark);
-	}
-
-	@AfterSuite
-	public void AfterTest() {
-
-		extent.flush();
-	}
+//	@BeforeTest
+//	public void BeforeTest() {
+//		extent.attachReporter(spark);
+//	}
+//
+//	@AfterSuite
+//	public void AfterTest() {
+//
+//		extent.flush();
+//	}
 
 	//	public String getScreenshot(String testCaseName,WebDriver driver) throws IOException
 	//	{
@@ -237,12 +237,12 @@ public class SeleniumTestManager {
 	//	}
 	//	
 	//	
-	//	@AfterTest
-	//	public void tearDownTest() {
-	//		//close browser
-	//		driver.close();
-	//		driver.quit();
-	//		System.out.println("Test Completed Successfully");
-	//	}
+		@AfterTest
+		public void tearDownTest() {
+			//close browser
+			driver.close();
+			driver.quit();
+			System.out.println("Test Completed Successfully");
+		}
 
 }
