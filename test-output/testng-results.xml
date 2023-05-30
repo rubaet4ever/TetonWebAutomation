@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="0" ignored="0" total="0" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="78030" started-at="2023-05-29T14:58:09 BDT" finished-at="2023-05-29T14:59:27 BDT">
+  <suite name="Default suite" duration-ms="41437" started-at="2023-05-30T21:54:39 BDT" finished-at="2023-05-30T21:55:21 BDT">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="78030" started-at="2023-05-29T14:58:09 BDT" finished-at="2023-05-29T14:59:27 BDT">
+    <test name="Default test" duration-ms="41437" started-at="2023-05-30T21:54:39 BDT" finished-at="2023-05-30T21:55:21 BDT">
       <class name="com.tetonshop.main.SeleniumTestManager">
-        <test-method status="PASS" signature="setUpTest()[pri:0, instance:com.tetonshop.main.SeleniumTestManager@7c417213]" name="setUpTest" is-config="true" duration-ms="78013" started-at="2023-05-29T14:58:09 BDT" finished-at="2023-05-29T14:59:27 BDT">
+        <test-method status="PASS" signature="setUpTest()[pri:0, instance:com.tetonshop.main.SeleniumTestManager@7c417213]" name="setUpTest" is-config="true" duration-ms="41393" started-at="2023-05-30T21:54:39 BDT" finished-at="2023-05-30T21:55:21 BDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpTest -->
-        <test-method status="FAIL" signature="tearDownTest()[pri:0, instance:com.tetonshop.main.SeleniumTestManager@7c417213]" name="tearDownTest" is-config="true" duration-ms="1" started-at="2023-05-29T14:59:27 BDT" finished-at="2023-05-29T14:59:27 BDT">
+        <test-method status="FAIL" signature="tearDownTest()[pri:0, instance:com.tetonshop.main.SeleniumTestManager@7c417213]" name="tearDownTest" is-config="true" duration-ms="0" started-at="2023-05-30T21:55:21 BDT" finished-at="2023-05-30T21:55:21 BDT">
           <exception class="java.lang.NullPointerException">
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException
-at com.tetonshop.main.SeleniumTestManager.tearDownTest(SeleniumTestManager.java:244)
+at com.tetonshop.main.SeleniumTestManager.tearDownTest(SeleniumTestManager.java:148)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)

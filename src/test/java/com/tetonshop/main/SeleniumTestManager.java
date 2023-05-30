@@ -59,16 +59,16 @@ public class SeleniumTestManager {
 
 			//webDriverManager.setup();
 
-			//WebDriver driver = getFirefoxDriver(SERVER_URL); 
-            
-			Register.createRegisterTest(driver);
-			ResetPassword.createResetPasswordTest(driver);
-			Login.createLoginTest(driver);
+			//WebDriver driver = getFirefoxDriver(SERVER_URL);          
+		
 			AboutUs.createAboutUsTest(driver);
 			Products.createProductsTest(driver);
 			FAQ.createFAQTest(driver);
 			Contact.createContactTest(driver);
 			ProductsAdd_DeleteCart.createProductsAdd_DeleteCart(driver);
+			Register.createRegisterTest(driver);
+			ResetPassword.createResetPasswordTest(driver);
+			Login.createLoginTest(driver);
 			ExtentReportsWithTestNG.createExtentReportsWithTestNG(driver);
 			
 //			ExtentTest Test = extent.createTest("Launch Browser and Website").assignAuthor("Mohammad").assignCategory("UI Test").assignDevice("DeskTop");
@@ -82,7 +82,6 @@ public class SeleniumTestManager {
 		//login(driver);
 
 	}
-
 
 	@Test
 	private static WebDriver getChromeDriver(String serverUrl) {
@@ -142,8 +141,7 @@ public class SeleniumTestManager {
 	//		FileUtils.copyFile(source, file);
 	//		return System.getProperty("user.dir") + "//reports//" + testCaseName + ".png";
 	//	}
-	//	
-	//	
+	
 		@AfterTest
 		public void tearDownTest() {
 			//close browser

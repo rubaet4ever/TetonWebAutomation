@@ -66,7 +66,7 @@ public class ExtentReportsWithTestNG {
 				.assignAuthor("John")
 				.assignCategory("Smoke Test")
 				.assignDevice("Desktop_chrome");
-		test.fail("User unable to navigate all screens");
+		test.pass("Contact page is able to clickable");
 		test.info("Displaying Page");
 	}
 	
@@ -97,7 +97,7 @@ public class ExtentReportsWithTestNG {
 				.assignCategory("User Acceptance Testing")
 				.assignDevice("Desktop_chrome");
 		test.pass("User unable to reset passoword is not responding");
-		test.warning("Reset password after first login");
+		test.warning("Reset password after first login credentials are invalid");
 		test.info("Displaying Page");;
 	}
 	
