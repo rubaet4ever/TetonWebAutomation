@@ -3,13 +3,13 @@
   
 Teton Web Automation(Register, Login, Reset Passwordss, Products-Add, Delete & Checkout, About us, Contact us and FAQ) Pages.
 
-Using java language with Web-automation test project , TestNG and In this project work with Selenium Web-Driver, Json.
+I have implemented using java language with Web-automation test project , TestNG and In this project work with Selenium Web-Driver, Json.
 
 The website link is http://shop.tetonelectronics.com/
 
 <h1 align="left">Technology</h1>
   
-- Tool: selenium
+- Framework: Selenium
 - IDE: Eclipse
 - Build tool: Maven
 - Language: Java
