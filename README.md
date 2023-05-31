@@ -1,5 +1,5 @@
 
-<h1 align="center">TetonTask_Web_Automation/h1>
+<h1 align="center">TetonTask_Web_Automation</h1>
   
 Teton Web Automation(Register, Login, Products, About us, Contact us and FAQ)pages
 
