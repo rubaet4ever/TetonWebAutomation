@@ -1,11 +1,11 @@
 
-<h1 align="left">TetonTask_Web_Automation</h1>
+<h1 align="left">TetonShopElectronics_Web_Automation</h1>
   
-Teton Web Automation(Register, Login, Reset Passwordss, Products-Add, Delete & Checkout, About us, Contact us and FAQ)pages
+Teton Web Automation(Register, Login, Reset Passwordss, Products-Add, Delete & Checkout, About us, Contact us and FAQ) Pages.
 
-Web-automation test project , TestNG, In this project work with Selenium Web-Driver, Json, using java language.
+Using java language with Web-automation test project , TestNG and In this project work with Selenium Web-Driver, Json.
 
-the website link is http://shop.tetonelectronics.com/
+The website link is http://shop.tetonelectronics.com/
 
 <h1 align="left">Technology</h1>
   
@@ -18,7 +18,7 @@ the website link is http://shop.tetonelectronics.com/
 <h1 align="left">PreRequisite</h1>
   
 - Need to install jdk 1.8
-- Need good internet connectivity
+- Need internet connectivity
   
 <h1 align="left">Run the Automation Script:</h1>
   
