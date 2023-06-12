@@ -13,7 +13,7 @@ public class Login {
 			Thread.sleep(2000);
 			driver.findElement(By.xpath("//input[@id='name']")).sendKeys("johnsmithgmail.com");//wrong email
 			Thread.sleep(2000);
-			driver.findElement(By.xpath("//input[@id='password']")).sendKeys("Abc@123456789");
+			driver.findElement(By.xpath("//input[@id='password']")).sendKeys("Abc@123456789"); // wrong password
 			Thread.sleep(2000);
 			driver.findElement(By.xpath("//div[4]/button")).click();
 			Thread.sleep(2000);

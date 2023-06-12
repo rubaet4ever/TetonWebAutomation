@@ -17,7 +17,7 @@ public class Register {
 			Thread.sleep(2000);
 			driver.findElement(By.xpath("//div[2]/div/input")).sendKeys("johnsmithgmail.com");//wrong email
 			Thread.sleep(2000);
-			driver.findElement(By.xpath("//div[3]/div/input")).sendKeys("12345678901");//wrong number
+			driver.findElement(By.xpath("//div[3]/div/input")).sendKeys("12345678901");//wrong phone number
 			Thread.sleep(2000);
 			driver.findElement(By.xpath("//div[4]/div/input")).sendKeys("ABC@12345678901");//wrong password
 			Thread.sleep(2000);
