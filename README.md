@@ -1,11 +1,23 @@
 
 <h1 align="left">TetonShopElectronics_Web_Automation</h1>
   
-Teton Web Automation(Register, Login, Reset Passwords, Products-Add, Delete & Checkout, About us, Contact us and FAQ) Pages.
-
 I have implemented using Java language with Web-automation test project, TestNG, and I worked with Selenium Web-Driver, JSON, in this project.
 
 The website link is http://shop.tetonelectronics.com/
+
+<h1 align="left">Task</h1>
+
+🔭 **Teton Web Automation:- 🌱 Menus**
+
+- Register
+- Login
+- Reset Passwords
+- Products
+- Delete
+- Checkout
+- About us
+- Contact us
+- FAQ
 
 <h1 align="left">Technology</h1>
   
