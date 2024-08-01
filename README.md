@@ -18,7 +18,7 @@ The website link is http://shop.tetonelectronics.com/
   
 <h1 align="left">PreRequisite</h1>
   
-- Need to install JDK 1.8
+- Need to install JDK 17
 - Need internet connectivity
   
 <h1 align="left">Run the Automation Script:</h1>
