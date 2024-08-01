@@ -1,7 +1,7 @@
 
 <h1 align="left">TetonShopElectronics_Web_Automation</h1>
   
-I have implemented using Java language with Web-automation test project, TestNG, and I worked with Selenium Web-Driver, JSON, in this project.
+I have implemented using Java language with Web-automation test project Selenium Web-Driver, TestNG, JUnit, and ExtenReports worked with in this project.
 
 The website link is http://shop.tetonelectronics.com/
 
@@ -24,7 +24,7 @@ The website link is http://shop.tetonelectronics.com/
 - Framework: Selenium
 - IDE: Eclipse
 - Build tool: Maven
-- Language: Java
+- Language: Java, JavaScript, HTML & CSS
 - Test_Runner: TestNG
 - Report - ExtentReports
   
