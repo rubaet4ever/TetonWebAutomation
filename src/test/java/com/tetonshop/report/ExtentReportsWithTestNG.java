@@ -12,8 +12,11 @@ import org.testng.annotations.AfterTest;
 
 public class ExtentReportsWithTestNG {
 
-	public ExtentReports extent;
-	public ExtentSparkReporter spark;
+	ExtentReports extent = new ExtentReports();
+	ExtentSparkReporter spark = new ExtentSparkReporter("ExtentReport.html");
+	
+	//public ExtentReports extent;
+	//public ExtentSparkReporter spark;
 	public ExtentTest test;
 	
 	public static void createExtentReportsWithTestNG(WebDriver driver) {
@@ -113,8 +116,7 @@ public class ExtentReportsWithTestNG {
 	
 	@BeforeTest
 	public void beforeTest() {
-		extent = new ExtentReports();
-		spark = new ExtentSparkReporter("ExtentReport.html");
+	
 		extent.attachReporter(spark);
 	}
 

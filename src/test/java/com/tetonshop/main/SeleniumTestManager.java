@@ -40,10 +40,10 @@ public class SeleniumTestManager {
 	//	static WebDriver driver;
 	//	static ExtentReports report;
 	//	static ExtentTest test;
-	WebDriver driver = null;
+	static WebDriver driver = null;
 
 	@BeforeTest 
-	public void setUpTest(){
+	public static void main (String[] args) throws InterruptedException {
 		try {
 
 			//WebDriverManager.chromedriver().setup();
@@ -61,14 +61,14 @@ public class SeleniumTestManager {
 
 			//WebDriver driver = getFirefoxDriver(SERVER_URL);          
 		
-			AboutUs.createAboutUsTest(driver);
-			Products.createProductsTest(driver);
-			FAQ.createFAQTest(driver);
-			Contact.createContactTest(driver);
-			ProductsAdd_DeleteCart.createProductsAdd_DeleteCart(driver);
-			Register.createRegisterTest(driver);
-			ResetPassword.createResetPasswordTest(driver);
-			Login.createLoginTest(driver);
+			//AboutUs.createAboutUsTest(driver);
+			//Products.createProductsTest(driver);
+			//FAQ.createFAQTest(driver);
+			//Contact.createContactTest(driver);
+			//ProductsAdd_DeleteCart.createProductsAdd_DeleteCart(driver);
+			//Register.createRegisterTest(driver);
+			//ResetPassword.createResetPasswordTest(driver);
+			//Login.createLoginTest(driver);
 			ExtentReportsWithTestNG.createExtentReportsWithTestNG(driver);
 			
 //			ExtentTest Test = extent.createTest("Launch Browser and Website").assignAuthor("Mohammad").assignCategory("UI Test").assignDevice("DeskTop");
@@ -77,7 +77,12 @@ public class SeleniumTestManager {
 		}
 		catch(Exception e) {
 			e.printStackTrace();
-			driver.quit();
+			try {
+				driver.quit();
+			} catch (Exception e1) {
+				// TODO Auto-generated catch block
+				e1.printStackTrace();
+			}
 		}
 		//login(driver);
 
@@ -87,6 +92,7 @@ public class SeleniumTestManager {
 	private static WebDriver getChromeDriver(String serverUrl) {
 
 		final String DRIVER_NAME = "webdriver.chrome.driver";
+		System.setProperty("webdriver.chrome.driver", ".\\chromedriver.exe");
 		//final String DRIVER_URL =  "F:\\My Work\\Work Tools\\Selenium\\selenium-java-3.141.59\\chromedriver_win32\\chromedriver.exe";
 
 		//System.setProperty(DRIVER_NAME, DRIVER_URL);
