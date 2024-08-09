@@ -26,7 +26,7 @@ The website link is http://shop.tetonelectronics.com/
 - Build tool: Maven
 - Language: Java, JavaScript, HTML & CSS
 - Test_Runner: TestNG
-- Report - ExtentReports
+- Report: ExtentReports
   
 <h1 align="left">PreRequisite</h1>
   
