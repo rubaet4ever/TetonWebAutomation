@@ -5,7 +5,7 @@ I have implemented using Java language with Web-automation test project Selenium
 
 The website link is http://shop.tetonelectronics.com/
 
-<h1 align="left">Task</h1>
+<h2 align="left">Task</h2>
 
 🔭 **Teton Web Automation:- 🌱 Menus**
 
@@ -19,7 +19,7 @@ The website link is http://shop.tetonelectronics.com/
 - Contact us
 - FAQ
 
-<h1 align="left">Technology</h1>
+<h2 align="left">Technology</h2>
   
 - Framework: Selenium
 - IDE: Eclipse
@@ -28,12 +28,12 @@ The website link is http://shop.tetonelectronics.com/
 - Test_Runner: TestNG
 - Report: ExtentReports
   
-<h1 align="left">PreRequisite</h1>
+<h2 align="left">PreRequisite</h2>
   
 - Need to install JDK 17
 - Need internet connectivity
   
-<h1 align="left">Run the Automation Script:</h1>
+<h2 align="left">Run the Automation Script</h2>
   
 - Open Terminal from Eclipse
 - Type this command: (maven clean test)
