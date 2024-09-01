@@ -1,5 +1,5 @@
 
-<h1 align="left">TetonShopElectronics_Web_Automation</h1>
+<h1 align="left">TetonShopElectronics</h1>
   
 I have implemented using Java language with Web-automation test project Selenium Web-Driver, TestNG, JUnit, and ExtenReports worked with in this project.
 
